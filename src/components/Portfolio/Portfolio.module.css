@@ -1,0 +1,40 @@
+.portfolio {
+  height: 100vh;
+}
+
+.text {
+  align-items: center;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.text h1 {
+  font-weight: 700;
+  font-size: 52px;
+  letter-spacing: -2px;
+  margin: 0;
+  color: #08fdd8;
+}
+
+.text p {
+  margin: 0;
+  color: white;
+}
+
+.text a {
+  color: #08fdd8;
+  line-break: none;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: 33vh 33vh 33vh;
+}
+
+.projects div {
+  overflow: hidden;
+  border: 1px solid greenyellow;
+  position: relative;
+}

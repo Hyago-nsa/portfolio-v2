@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+.fp-slidesNav {
+  width: 84px;
+  transform: scale(1.5) !important;
+}
+
+.fp-watermark {
+  opacity: 0% !important;
+}
+
+.fp-arrow {
+  color: white;
+  opacity: 20%;
+  transition: ease-in-out 0.09s;
+}
+
+.fp-arrow:hover {
+  opacity: 100%;
+}
+
+.fp-next:hover {
+  border-color: transparent transparent transparent #08fdd8 !important;
+}
+
+.fp-prev:hover {
+  border-color: transparent #ff246f transparent transparent !important;
+}

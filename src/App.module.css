@@ -1,0 +1,83 @@
+.buttons {
+  margin-top: 8vh;
+  margin-left: 7vw;
+}
+
+.buttonLeft,
+.buttonRight {
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  padding: 0 30px;
+  border-top: transparent;
+  border-bottom: transparent;
+
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.buttonLeft:hover,
+.buttonRight:hover {
+  transition: 0.2s ease;
+}
+
+/* Buttons hover */
+
+.buttonLeft {
+  background-color: transparent;
+  border-left: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.buttonLeft:hover {
+  background-color: whitesmoke;
+  border-left: 2px solid rgb(27, 27, 27);
+  border-right: 2px solid rgb(27, 27, 27);
+  color: rgb(27, 27, 27);
+}
+
+.buttonRight {
+  background-color: whitesmoke;
+  border-left: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  color: rgb(27, 27, 27);
+
+  margin-left: 11vw;
+}
+
+.buttonRight:hover {
+  background-color: transparent;
+  border-left: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+
+  color: whitesmoke;
+}
+
+.specialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialBlank {
+  width: 500px;
+}
+
+.somethingspecial {
+  width: 50%;
+}
+
+.specialclick {
+  font-weight: 500;
+  margin-left: 1%;
+  color: #08fdd8;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.specialclick:hover{
+  transition: ease 0.2s;
+  opacity: 80%;
+}

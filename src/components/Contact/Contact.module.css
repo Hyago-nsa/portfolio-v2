@@ -1,0 +1,159 @@
+.grain {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.grain:after {
+  content: "";
+  position: absolute;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+
+  height: 300%;
+  width: 300%;
+
+  left: -50%;
+  top: -110%;
+
+  opacity: 0.35;
+  z-index: -1;
+
+  filter: invert(100%) brightness(100%) contrast(100%);
+
+  animation: grain 25s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 30%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+.stayintouch {
+  margin-bottom: 15vh;
+  border-bottom: 1px solid #ff246f;
+  width: 35vw;
+  opacity: 90%;
+
+  color: #ff246f;
+  font-weight: 400;
+  font-size: 25px;
+
+  letter-spacing: 4px;
+}
+
+.contact {
+  margin: 0 11vw 0 11vw;
+}
+
+.contact_form {
+  display: flex;
+}
+
+.contact_text {
+
+  max-width: 30vw;
+  margin-right: 6vh;
+}
+
+.contact_description {
+  margin-top: 7vh;
+  color: whitesmoke;
+}
+
+.contact_info {
+  margin-top: 20vh;
+
+  font-size: 15px;
+  font-weight: 100;
+  color: azure;
+}
+
+.contactForm {
+  box-sizing: border-box;
+  margin-left: 13vw;
+  width: 40vw;
+  display: block;
+  position: relative;
+}
+
+.input_field {
+  outline: none !important;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 3vh;
+  height: 60px;
+  border: none;
+  color: whitesmoke;
+
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.contactForm textarea {
+  color: #ff246f;
+  resize: none;
+  border-color: #ff246f;
+  height: 50%;
+}
+
+.input_field_send {
+  margin-left: 50%;
+}
+
+.input_field_button {
+  background-color: transparent;
+  margin-top: 5vh;
+  width: 50%;
+  height: 60px;
+  border: none;
+
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+
+  color: #ff246f;
+  border: 1px solid #ff246f !important;
+
+  transition: 0.12s ease;
+}
+
+.input_field_button:hover {
+  background-color: #ff246f;
+  color: black;
+}

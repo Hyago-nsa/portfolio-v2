@@ -1,0 +1,94 @@
+.grain {
+  top: 0;
+  left: 0;
+  background-color: rgba(25, 25, 25);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.grain:after {
+  content: "";
+  position: absolute;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+
+  height: 300%;
+  width: 300%;
+
+  left: -50%;
+  top: -110%;
+
+  opacity: 0.3;
+  z-index: -1;
+
+  filter: invert(100%) brightness(100%) contrast(100%);
+
+  animation: grain 25s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 30%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+.introduction {
+  color: whitesmoke;
+  margin-left: 7vw;
+}
+
+.introduction h2:nth-child(1) {
+  margin: 0;
+  letter-spacing: -5px;
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 8.6rem;
+}
+
+.introduction h2:nth-child(2) {
+  margin: -4vh 0 0 0;
+  letter-spacing: -5px;
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 10.7rem;
+}
+
+.introduction p {
+  opacity: 50%;
+  margin-top: 0;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 300;
+  font-size: 1.4rem;
+}

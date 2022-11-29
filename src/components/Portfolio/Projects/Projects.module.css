@@ -13,5 +13,5 @@
 .container:hover > .image {
   opacity: 100%;
   transform: scale(120%);
-  filter: brightness(105%);
+  filter: brightness(110%);
 }

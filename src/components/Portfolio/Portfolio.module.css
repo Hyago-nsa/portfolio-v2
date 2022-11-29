@@ -41,17 +41,3 @@
   border: 0px solid transparent;
   position: relative;
 }
-
-.image {
-  filter: brightness(60%);
-  transform: scale(110%);
-  width: 100%;
-  height: 100%;
-  transition: ease-in-out 0.35s;
-}
-
-.image:hover{
-  opacity: 100%;
-  transform: scale(120%);
-  filter: brightness(105%);
-}

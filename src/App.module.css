@@ -77,7 +77,69 @@
   transition: ease 0.2s;
 }
 
-.specialclick:hover{
+.specialclick:hover {
   transition: ease 0.2s;
   opacity: 80%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 912px) {
+  .specialBlank {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  
+  .buttons {
+    margin-top: 7vh;
+    margin-left: 10%;
+  }
+
+  .buttonLeft,
+  .buttonRight {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    padding: 0 15px;
+    border-top: transparent;
+    border-bottom: transparent;
+
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  .somethingspecial {
+    width: 100%;
+  }
+
+  .specialclick {
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .buttonLeft,
+  .buttonRight {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0 10px;
+    border-top: transparent;
+    border-bottom: transparent;
+
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  .buttons {
+    font-size: 14px;
+    margin-top: 7vh;
+    margin-left: 6%;
+  }
+
 }

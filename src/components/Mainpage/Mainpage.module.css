@@ -92,3 +92,38 @@
   font-weight: 300;
   font-size: 1.4rem;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .introduction {
+    color: whitesmoke;
+    margin-left: 10%;
+  }
+
+  .introduction h2:nth-child(1) {
+    margin: 0;
+    letter-spacing: -5px;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 8.6rem;
+  }
+
+  .introduction h2:nth-child(2) {
+    margin: -4vh 0 0 0;
+    letter-spacing: -5px;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 10.7rem;
+  }
+
+  .introduction p {
+    opacity: 50%;
+    margin-top: 0;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 300;
+    font-size: 0.7rem;
+  }
+}

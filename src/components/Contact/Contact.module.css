@@ -85,7 +85,6 @@
 }
 
 .contact_text {
-
   max-width: 30vw;
   margin-right: 6vh;
 }
@@ -156,4 +155,50 @@
 .input_field_button:hover {
   background-color: #ff246f;
   color: black;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 912px) {
+  .contactForm {
+    box-sizing: border-box;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contact_text {
+    max-width: 30vw;
+    margin-right: 0;
+  }
+
+  .contact_text {
+    display: none;
+  }
+
+  .stayintouch {
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .buttonLeft,
+  .buttonRight {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0 10px;
+    border-top: transparent;
+    border-bottom: transparent;
+
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
 }

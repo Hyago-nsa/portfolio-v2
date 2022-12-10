@@ -1,23 +1,23 @@
 import React from "react";
 import classes from "./Portfolio.module.css";
-import image1 from "../../assets/images/U_Fig_Farewell_ashen_one._Mayst_thou_thy_peace_discovr._86093366-b923-4cd7-92c8-685567a0f29c.png";
-import image2 from "../../assets/images/U_Fig_Flaming_circle_in_the_moonsky_a4d6bbe1-f6ab-4ab1-b958-c48096309607.png";
-import image3 from "../../assets/images/U_Fig_U_Fig_a2182dee-e0db-42ab-b22a-d339aa502fce.png";
+import project_advice from "../../assets/images/project-advice.png";
+import project_budget from "../../assets/images/project-budget.png";
+import project_dino from "../../assets/images/project-dino.png";
+import project_ocean from "../../assets/images/project-ocean.png";
+import project_portfolio from "../../assets/images/project-portfolio.png";
+import project_youtube from "../../assets/images/project-youtube.png";
 import Projects from "./Projects/Projects";
 
 const Portfolio = () => {
   return (
     <div className={classes.portfolio}>
       <div className={classes.projects}>
-        <Projects image={image1} />
-        <Projects image={image2} />
-        <Projects image={image3} />
-        <Projects image={image1} />
-        <Projects image={image2} />
-        <Projects image={image3} />
-        <Projects image={image1} />
-        <Projects image={image2} />
-        <Projects image={image3} />
+        <Projects image={project_advice} href={"https://hyago-nsa.github.io/project-advice/"}/>
+        <Projects image={project_portfolio} href={"https://hyago-nsa.github.io/react-portfolio/"}/>
+        <Projects image={project_youtube} href={"https://hyago-nsa.github.io/project-youtube-clone/"}/>
+        <Projects image={project_dino} href={"https://hyago-nsa.github.io/project-dinossaur-game/"}/>
+        <Projects image={project_ocean} href={"https://hyago-nsa.github.io/project-ocean/"}/>
+        <Projects image={project_budget} href={"https://hyago-nsa.github.io/project-budge-app/"}/>
       </div>
     </div>
   );

@@ -4,7 +4,9 @@ import classes from "./Projects.module.css";
 const Projects = (props) => {
   return (
     <div className={classes.container}>
-      <img className={classes.image} src={props.image} />
+      <a  href={props.href}>
+      <img className={classes.image} src={props.image}/>
+      </a>
     </div>
   );
 };

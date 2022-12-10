@@ -104,8 +104,8 @@
 
 .contactForm {
   box-sizing: border-box;
-  margin-left: 13vw;
-  width: 40vw;
+  margin-left: 5vw;
+  width: 100%;
   display: block;
   position: relative;
 }
@@ -163,7 +163,6 @@
   .contactForm {
     box-sizing: border-box;
     margin-left: 0;
-    width: 100%;
     display: block;
     position: relative;
   }
